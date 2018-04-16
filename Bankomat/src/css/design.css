@@ -1,0 +1,50 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 3.4.2018, 9:57:04
+    Author     : skolniPC
+*/
+
+#loginBackground
+{
+    -fx-background-image: url("../pictures/background.jpg");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 100% 100%;
+    
+    
+    
+}
+#balancePane,#historyPane,#transactionPane
+{
+    -fx-background-color: rgba(0,0,0,0.3);
+
+}
+
+#menuBackground
+{
+    -fx-background-image: url("../pictures/background2.jpg");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 100% 100%;
+}
+
+#loginPane
+{
+    
+    
+    -fx-background-color:rgba(174, 213, 229,0.5);
+}
+
+#password,#accountNumber,#oldPsw,#newPsw
+{
+    -fx-prompt-text-fill: white;
+    -fx-text-inner-color: white;
+}
+#inputAccountNumber,#inputWithdrawMoney,#inputMoney
+{
+    -fx-prompt-text-fill: white;
+    -fx-text-inner-color: white;
+}
+

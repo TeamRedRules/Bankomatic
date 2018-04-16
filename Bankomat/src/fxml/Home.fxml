@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" onMouseDragged="#moveWindow" onMousePressed="#mousePressed" prefHeight="651.0" prefWidth="662.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxml.HomeController">
+   <children>
+      <Pane id="loginBackground" fx:id="next" layoutY="-3.0" prefHeight="657.0" prefWidth="663.0" stylesheets="@../css/design.css">
+         <children>
+            <Pane id="loginPane" layoutX="64.0" layoutY="73.0" prefHeight="512.0" prefWidth="523.0" stylesheets="@../css/design.css">
+               <children>
+                  <Label layoutX="175.0" layoutY="40.0" text="SpemBank" textFill="WHITE">
+                     <font>
+                        <Font name="Berlin Sans FB" size="35.0" />
+                     </font>
+                  </Label>
+                  <JFXPasswordField id="password" fx:id="inputPsw" layoutX="168.0" layoutY="335.0" prefHeight="25.0" prefWidth="188.0" promptText="Enter PinCode" stylesheets="@../css/design.css" />
+                  <JFXTextField id="accountNumber" fx:id="inputAcc" layoutX="168.0" layoutY="257.0" prefHeight="25.0" prefWidth="188.0" promptText="Enter account Number" stylesheets="@../css/design.css" />
+                  <ImageView fitHeight="78.0" fitWidth="103.0" layoutX="445.0" layoutY="434.0" onMouseClicked="#changeScene" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../pictures/icons8_Right_48px.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="40.0" fitWidth="45.0" layoutX="101.0" layoutY="249.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../pictures/icons8_User_48px.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="101.0" layoutY="335.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../pictures/icons8_Password_48px.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="labelError" layoutX="126.0" layoutY="416.0" prefHeight="36.0" prefWidth="258.0" textFill="RED">
+                     <font>
+                        <Font name="Berlin Sans FB" size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <ImageView fx:id="exit" fitHeight="45.0" fitWidth="65.0" layoutX="604.0" layoutY="14.0" onMouseClicked="#close" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../pictures/icons8_Exit_48px.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

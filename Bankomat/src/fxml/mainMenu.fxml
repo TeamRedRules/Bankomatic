@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="menuBackground" onMouseDragged="#moveWindow" onMousePressed="#mousePressed" prefHeight="670.0" prefWidth="1019.0" stylesheets="@../css/design.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxml.MainMenuController">
+   <children>
+      <Pane id="balancePane" layoutX="27.0" layoutY="39.0" prefHeight="216.0" prefWidth="945.0" stylesheets="@../css/design.css">
+         <children>
+            <Label alignment="CENTER" layoutX="27.0" layoutY="89.0" prefHeight="17.0" prefWidth="225.0" text="Aktuální zůstatek " textFill="WHITE">
+               <font>
+                  <Font name="BebasNeueBold" size="32.0" />
+               </font>
+            </Label>
+            <Label fx:id="labelBalance" alignment="CENTER" layoutX="482.0" layoutY="89.0" prefHeight="17.0" prefWidth="225.0" text="0" textFill="WHITE">
+               <font>
+                  <Font name="BebasNeueBold" size="32.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane id="historyPane" layoutX="28.0" layoutY="280.0" prefHeight="360.0" prefWidth="296.0" stylesheets="@../css/design.css">
+         <children>
+            <Label alignment="CENTER" layoutX="36.0" layoutY="26.0" prefHeight="17.0" prefWidth="225.0" text="vybrat peníze" textFill="WHITE">
+               <font>
+                  <Font name="BebasNeueBold" size="32.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="inputWithdrawMoney" focusColor="WHITE" layoutX="42.0" layoutY="119.0" prefHeight="25.0" prefWidth="213.0" promptText="MNOŽSTVÍ PENĚZ" unFocusColor="BLACK" />
+            <JFXButton layoutX="82.0" layoutY="256.0" onAction="#withdrawMoney" prefHeight="25.0" prefWidth="133.0" text="Vybrat" textFill="WHITE">
+               <font>
+                  <Font name="BebasNeueBold" size="24.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+      <Pane id="transactionPane" layoutX="353.0" layoutY="280.0" prefHeight="360.0" prefWidth="296.0" stylesheets="@../css/design.css">
+         <children>
+            <Label alignment="CENTER" layoutX="36.0" layoutY="25.0" prefHeight="17.0" prefWidth="225.0" text="Poslat peníze" textFill="WHITE">
+               <font>
+                  <Font name="BebasNeueBold" size="32.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="inputAccountNumber" focusColor="WHITE" layoutX="42.0" layoutY="109.0" prefHeight="25.0" prefWidth="213.0" promptText="ČÍSLO ÚČTU" unFocusColor="BLACK" />
+            <JFXTextField fx:id="inputMoney" focusColor="WHITE" layoutX="42.0" layoutY="168.0" prefHeight="25.0" prefWidth="213.0" promptText="MNOŽSTVÍ PENĚZ" unFocusColor="BLACK" />
+            <JFXButton layoutX="82.0" layoutY="269.0" onAction="#sendMoney" prefHeight="25.0" prefWidth="133.0" text="Poslat" textFill="WHITE">
+               <font>
+                  <Font name="BebasNeueBold" size="24.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+      <ImageView fx:id="exit" fitHeight="39.0" fitWidth="45.0" layoutX="972.0" layoutY="6.0" onMouseClicked="#close" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../pictures/icons8_Exit_48px.png" />
+         </image>
+      </ImageView>
+      <Pane id="transactionPane" layoutX="676.0" layoutY="280.0" prefHeight="360.0" prefWidth="296.0" stylesheets="@../css/design.css">
+         <children>
+            <Label alignment="CENTER" layoutX="36.0" layoutY="28.0" prefHeight="17.0" prefWidth="225.0" text="ZMĚNA HESLA" textFill="WHITE">
+               <font>
+                  <Font name="BebasNeueBold" size="32.0" />
+               </font>
+            </Label>
+            <JFXTextField id="newPsw" fx:id="newPsw" focusColor="WHITE" layoutX="54.0" layoutY="120.0" prefHeight="25.0" prefWidth="188.0" promptText="NOVÉ HESLO" stylesheets="@../css/design.css" unFocusColor="#1e1d1d" />
+            <JFXButton layoutX="68.0" layoutY="262.0" onAction="#changePsw" prefHeight="25.0" prefWidth="133.0" text="Poslat" textFill="WHITE">
+               <font>
+                  <Font name="BebasNeueBold" size="24.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
